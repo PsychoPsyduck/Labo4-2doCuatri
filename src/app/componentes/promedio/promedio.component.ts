@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromedioComponent implements OnInit {
 
-  edadUno : number;
-  edadDos : number;
-  promedio : number;
+  edadUno = 0 ;
+  edadDos = 0;
+  promedio = 0;
 
   constructor() { }
 
@@ -22,4 +22,9 @@ export class PromedioComponent implements OnInit {
     this.promedio = promedio / 2;
   }
 
+  Limpiar() {
+    this.edadUno = 0
+    this.edadDos = 0
+    this.promedio = 0
+  }
 }
