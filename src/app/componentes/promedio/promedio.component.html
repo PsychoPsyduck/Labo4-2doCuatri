@@ -1,0 +1,17 @@
+<h1>Promedio</h1>
+
+<a href="/">Volver</a><br><br>
+
+<form action="">
+    <label for="numUno">Edad Uno: </label>
+    <input type="number" name="numUno" [(ngModel)]="edadUno"><br>
+
+    <label for="numDos">Edad Dos: </label>
+    <input type="number" name="numDos" [(ngModel)]="edadDos"><br>
+
+    <button (click)="calcularPromedio()">Promediar</button><br>
+
+    <label for="prom">Promedio Edad: </label>
+    <input type="number" name="prom" [(ngModel)]="promedio"><br>
+
+</form>

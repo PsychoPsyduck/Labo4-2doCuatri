@@ -1,0 +1,13 @@
+<h1>Login</h1>
+
+<a href="/">Volver</a>
+
+<form action="">
+    <label for="usuario">Usuario (admin): </label>
+    <input matInput type="text" [(ngModel)]="usuario" name="uname">
+    <br>
+    <label for="contraseña">Contraseña (admin): </label>
+    <input type="password" [(ngModel)]="contrasena" name="psw">
+    <br>
+    <button (click)="Ingresar()">Entrar</button>
+</form>
