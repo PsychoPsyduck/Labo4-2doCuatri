@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Usuario } from 'src/app/clases/usuario';
 
 @Component({
   selector: 'app-login',
@@ -9,16 +10,17 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  usuario: string;
-  contrasena: string;
+  usuario: Usuario;
   
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    this.usuario = new Usuario;
+   }
 
   ngOnInit(): void {
   }
 
   Ingresar() {
-    if(!(this.usuario == "admin" && this.contrasena == "admin")) {
+    if(!(this.usuario.nombre == "admin" && this.usuario.clave == "admin")) {
       this.router.navigate(['/error']);
     }
     else {

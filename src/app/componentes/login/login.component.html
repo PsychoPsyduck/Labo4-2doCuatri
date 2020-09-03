@@ -4,10 +4,10 @@
 
 <form action="">
     <label for="usuario">Usuario (admin): </label>
-    <input matInput type="text" [(ngModel)]="usuario" name="uname">
+    <input matInput type="text" [(ngModel)]="usuario.nombre" name="uname">
     <br>
     <label for="contraseña">Contraseña (admin): </label>
-    <input type="password" [(ngModel)]="contrasena" name="psw">
+    <input type="password" [(ngModel)]="usuario.clave" name="psw">
     <br>
     <button (click)="Ingresar()">Entrar</button>
 </form>
