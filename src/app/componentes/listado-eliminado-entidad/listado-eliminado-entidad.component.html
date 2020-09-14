@@ -1,0 +1,14 @@
+<table class="table table-striped" class="mat-elevation-z8" style="width: 100%; padding: 10px;">
+    <thead>
+        <tr>
+            <th style="text-align: left;">Nombre</th>
+            <th style="text-align: left;">Apellido</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let entidad of listadoEliminadoEntidades">
+            <td style="width: 50%;">{{entidad.Nombre}}</td>
+            <td style="width: 50%;">{{entidad.Apellido}}</td>
+        </tr>
+    </tbody>
+</table>

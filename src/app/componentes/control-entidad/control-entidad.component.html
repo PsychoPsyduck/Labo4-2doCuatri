@@ -1,0 +1,18 @@
+<h1>Control</h1>
+<div class="row">
+    <div class="col-md-8">
+        <h2>Listado</h2>
+        <app-listado-entidad [listadoEntidades]="listadoEntidades" (verDetalle)="entidadSeleccionada($event)"></app-listado-entidad>
+    </div>
+
+    <div class="row col-md-2">
+        <div class="col-md-12">
+            <h2>Detalle</h2>
+            <app-detalle-entidad [entidad]="entidad"></app-detalle-entidad>
+        </div>
+        <div class="col-md-12">
+            <h2>Eliminados</h2>
+            <app-listado-eliminado-entidad></app-listado-eliminado-entidad>
+        </div>
+    </div>
+</div>
